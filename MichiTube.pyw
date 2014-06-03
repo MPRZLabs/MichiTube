@@ -37,5 +37,6 @@ class MichiTube(Frame):
     MichiDLFrame(subprocess.call(["youtube-dl",self.entry.get()]), master=self.masterer).mainloop()
 
 root = Tk()
+root.title("MichiTube")
 app = MichiTube(master=root)
 app.mainloop()
